@@ -87,6 +87,8 @@
     "@graphql-codegen/typescript-operations": "^4.0.1",
     "@nestjs/schematics": "^10.0.3",
     "@nestjs/testing": "^10.2.8",
+    "@ngx-translate/core": "^15.0.0",
+    "@ngx-translate/http-loader": "^8.0.0",
     "@nx/angular": "17.1.2",
     "@nx/devkit": "17.1.2",
     "@nx/eslint": "17.1.2",
