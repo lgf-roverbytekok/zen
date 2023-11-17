@@ -5,12 +5,14 @@
 
   <mat-form-field>
     <mat-select [(value)]="selected">
-      <mat-option *ngFor="let language of languages" [value]="language.value">
-        {{language.englishSpelling}} 
-        <ng-container *ngIf="language.englishSpelling !== 'English'">
-          - {{language.nativeSpelling}}
-        </ng-container>
-      </mat-option>
+      @for(language of languages; track language.value) {
+        <mat-option [value]="language.value">
+          {{language.englishSpelling}} 
+          <ng-container *ngIf="language.englishSpelling !== 'English'">
+            - {{language.nativeSpelling}}
+          </ng-container>
+        </mat-option>
+      }
     </mat-select>
   </mat-form-field>
 </div>
