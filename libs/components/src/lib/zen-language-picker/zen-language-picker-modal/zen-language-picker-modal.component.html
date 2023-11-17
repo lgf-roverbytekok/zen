@@ -7,10 +7,11 @@
     <mat-select [(value)]="selected">
       @for(language of languages; track language.value) {
         <mat-option [value]="language.value">
-          {{language.englishSpelling}} 
-          <ng-container *ngIf="language.englishSpelling !== 'English'">
+          {{language.englishSpelling}}
+          
+          @if(language.englishSpelling !== 'English') {
             - {{language.nativeSpelling}}
-          </ng-container>
+          }
         </mat-option>
       }
     </mat-select>
