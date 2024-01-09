@@ -3,6 +3,7 @@
 /.env
 /apps/**/prisma/generated/
 /uploads/
+/apps/portal/src/assets/unity/
 
 # compiled output
 dist
