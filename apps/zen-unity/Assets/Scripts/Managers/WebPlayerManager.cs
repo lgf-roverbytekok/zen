@@ -1,9 +1,11 @@
+
 using UnityEngine;
 
 namespace Zen
 {
     public class WebPlayerManager : MonoBehaviour
     {
+#if UNITY_WEBGL && !UNITY_EDITOR
         private void Awake()
         {
             DontDestroyOnLoad(gameObject);
@@ -19,5 +21,6 @@ namespace Zen
         {
             Debug.Log("SAMPLE HIT");
         }
+#endif
     }
 }
