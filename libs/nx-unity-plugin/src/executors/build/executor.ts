@@ -34,7 +34,15 @@ const runSpawn = (cmd: string, args: ReadonlyArray<string>) =>
 export default async function runExecutor(options: BuildExecutorSchema, context: ExecutorContext) {
   const projectRoot = context.projectsConfigurations.projects[context.projectName].root;
 
-  const args = ['-quit', '-batchmode', '-nographics', '-projectPath', projectRoot];
+  const args = [
+    '-quit',
+    '-batchmode',
+    '-nographics',
+    '-buildTarget',
+    'WebGL',
+    '-projectPath',
+    projectRoot,
+  ];
 
   if (options.executeMethod) {
     args.push('-executeMethod');

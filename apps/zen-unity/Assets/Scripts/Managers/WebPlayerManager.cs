@@ -5,7 +5,7 @@ namespace Zen
 {
     public class WebPlayerManager : MonoBehaviour
     {
-#if UNITY_WEBGL && !UNITY_EDITOR
+#if UNITY_WEBGL
         private void Awake()
         {
             DontDestroyOnLoad(gameObject);
