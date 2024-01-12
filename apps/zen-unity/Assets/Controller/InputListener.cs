@@ -38,7 +38,7 @@ namespace Zen
 
         public void OnToggleSprint(InputValue value)
         {
-            if (value.isPressed) sprint = !sprint;
+            sprint = !sprint;
         }
 
         public void MoveInput(Vector2 newMoveDirection)
