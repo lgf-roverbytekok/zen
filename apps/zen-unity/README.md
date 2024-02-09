@@ -1,5 +1,5 @@
 # zen-unity
-This is a Unity URP 3D - WebGL project for this monorepo.  Open this project's directory through Unity hub.  All of the dependencies will be downloaded and installed into the Unity project that is described by the `apps/zen-unity/Packages/manifest.json` file after you open it with the Unity Editor.
+This is a Unity URP 3D - WebGL project for this monorepo.  Open this project's directory with Unity Hub.  All of the dependencies will be downloaded and installed into the Unity project that is described by the `apps/zen-unity/Packages/manifest.json` file. Wait for the project to open within the Unity Editor.
 
 [UniVRM](https://github.com/vrm-c/UniVRM) and its dependencies are being utilized for the VRM loader, which is just an extension of the [glTF standard](https://www.youtube.com/watch?v=tonSNnEj-ow).  There are some issues with the initial setup of projects with UniVRM installed.  I have [filed an issue](https://github.com/vrm-c/UniVRM/issues/2185) in their project's GitHub repo about it.
 
