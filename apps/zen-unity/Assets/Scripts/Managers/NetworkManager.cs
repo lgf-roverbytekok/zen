@@ -1,5 +1,6 @@
 using System.Text;
 using System.Threading.Tasks;
+using Colyseus;
 using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -8,6 +9,8 @@ namespace Zen
 {
     public class NetworkManager
     {
+        public static ColyseusClient ColyseusClient = new ColyseusClient(AppSettings.ColyseusURL);
+
         public static async Task<GraphQLResponse<T>> SendGraphQLRequest<T>(object data)
         {
             var request = new UnityWebRequest(AppSettings.GraphQLURL, "POST");

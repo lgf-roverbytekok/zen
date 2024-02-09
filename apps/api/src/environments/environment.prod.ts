@@ -11,7 +11,7 @@ export const environment: EnvironmentBase = {
   expressPort: process.env.PORT as string,
   publicRegistration: true,
   graphql: {
-    subscriptions: true,
+    subscriptions: false,
     sandbox: false,
     introspection: false,
     csrfPrevention: true,

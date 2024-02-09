@@ -27,4 +27,7 @@ export abstract class EnvironmentBase {
     loginConfirmedURL: string;
     google?: GoogleStrategyOptions;
   };
+  readonly colyseus?: {
+    monitor: boolean;
+  };
 }

@@ -14,7 +14,7 @@ export const environment: EnvironmentBase = {
   publicRegistration: true,
   cors: { credentials: true, origin: true },
   graphql: {
-    subscriptions: true,
+    subscriptions: false,
     sandbox: true,
     introspection: true,
     csrfPrevention: true,
@@ -68,5 +68,8 @@ export const environment: EnvironmentBase = {
       callbackURL: 'http://localhost:7080/auth/google/redirect',
       scope: ['email'],
     },
+  },
+  colyseus: {
+    monitor: true,
   },
 };
