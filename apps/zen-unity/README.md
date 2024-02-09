@@ -3,7 +3,7 @@ This is a Unity URP 3D - WebGL project for this monorepo.  Open this project's d
 
 [UniVRM](https://github.com/vrm-c/UniVRM) and its dependencies are being utilized for the VRM loader, which is just an extension of the [glTF standard](https://www.youtube.com/watch?v=tonSNnEj-ow).  There are some issues with the initial setup of projects with UniVRM installed.  I have [filed an issue](https://github.com/vrm-c/UniVRM/issues/2185) in their project's GitHub repo about it.
 
-Please find the file `apps/zen-unity/Assets/Art/VRM/Mico.vrm` within the Unity Editor's project explorer.  It is the only `.vrm` file currently in the project.  Select the `Materials` tab after selecting the `.vrm` file.  Ensure that the `Render Pipeline` setting is set to `Universal Render Pipeline`.  Refer to the [issue I filed](https://github.com/vrm-c/UniVRM/issues/2185) for further details.
+Please find the file `apps/zen-unity/Assets/Art/VRM/Mico.vrm` within the Unity Editor's project explorer.  It is the only `.vrm` file currently in the project.  Select the `Materials` tab after selecting the `.vrm` file.  Ensure that the `Render Pipeline` setting is set to `Universal Render Pipeline`.  For further details, refer to the UniVRM issue: [Render pipeline setting incorrectly detects if URP is installed](https://github.com/vrm-c/UniVRM/issues/2185).
 
 The Unity project must be open within Unity's Editor at least once for the command `pnpm dev:unity` to be able to compile the Unity app successfully and copy the WASM files and addressable assets into the `apps/portal/src/assets/unity` path.
 
