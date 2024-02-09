@@ -7,7 +7,7 @@ This is a Unity URP 3D - WebGL project for this monorepo.  Open this project's d
 
 Please find the file `apps/zen-unity/Assets/Art/VRM/Mico.vrm` within the Unity Editor's project explorer.  It is the only `.vrm` file currently in the project.  Select the `Materials` tab after selecting the `.vrm` file.  Ensure that the `Render Pipeline` setting is set to `Universal Render Pipeline` as seen in the screenshot above.
 
-The Unity project must be open within Unity's Editor at least once for the command `pnpm dev:unity` to compile the Unity app and copy the WASM files and addressable assets into the `apps/portal/src/assets/unity` path.
+The Unity project must be open within Unity's Editor at least once for the command `pnpm dev:unity` to be able to compile the Unity app successfully and copy the WASM files and addressable assets into the `apps/portal/src/assets/unity` path.
 
 The NodeJS script running the compilation is expecting the `Unity.exe` to exist within the system environments.  Please ensure that you have added it to the list of your environment paths.  For my system running Windows 11, I am required to add `C:\Program Files\Unity\Hub\Editor\2023.2.8f1\Editor` to my environment paths.  Notice that the editor installed on your system should match this Unity project's version.  The current version of the Unity project can be found at `apps/zen-unity/ProjectSettings/ProjectVersion.txt`.
 
